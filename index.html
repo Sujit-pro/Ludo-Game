@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ludo – HTML/CSS/JS</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <div class="board-wrap">
+    <div class="board">
+      <div id="grid" class="grid"></div>
+    </div>
+  </div>
+  <aside class="side">
+    <div class="row" style="justify-content:space-between">
+      <div style="font-weight:800">🎲 Ludo</div>
+      <button id="newGameBtn" class="ghost">New Game</button>
+    </div>
+    <div class="row">
+      <label>Players:</label>
+      <select id="playersSel" class="pill">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+      </select>
+      <span class="pill">Exact finish ✔️</span>
+      <span class="pill">6 gives extra turn ➕</span>
+      <span class="pill">Capture sends to base 🔁</span>
+    </div>
+    <div class="row" style="justify-content:space-between;align-items:center">
+      <div>
+        <div class="pill">Turn: <span id="turnName">—</span></div>
+        <div class="hint">Click a highlighted piece to move.</div>
+      </div>
+      <button id="rollBtn" class="primary">Roll</button>
+    </div>
+    <div class="row" style="justify-content:space-between">
+      <div class="die" id="die">–</div>
+      <div class="legend">
+        <div class="chip"><span class="dot red"></span> Red</div>
+        <div class="chip"><span class="dot green"></span> Green</div>
+        <div class="chip"><span class="dot yellow"></span> Yellow</div>
+        <div class="chip"><span class="dot blue"></span> Blue</div>
+      </div>
+    </div>
+    <div class="log" id="log"></div>
+  </aside>
+</div>
+</body>
+</html>
